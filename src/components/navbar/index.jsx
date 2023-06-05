@@ -1,5 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link';
+
 import Button from '../button'
 
 function Navbar() {
@@ -11,10 +13,16 @@ function Navbar() {
         width={40}
         height={40}/>
 
-      <ul className='flex gap-8 items-center '>
-        <li>Home</li>
-        <li>Page</li>
-        <Button>Contact us</Button>
+      <ul className='flex gap-8 items-center cursor-pointer'>
+        <li>
+          <Link href="/">Home</Link>
+        </li>
+        <li>
+          <Link href="/about">About us</Link>
+        </li>
+        <Button>
+          <Link href="/contact">Contact us</Link>
+        </Button>
       </ul>
     </div>
   )

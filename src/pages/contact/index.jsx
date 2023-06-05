@@ -1,12 +1,12 @@
 import MainLayout from '@/components/layouts/main-layout'
 import React from 'react'
 
-function about() {
+function Contact() {
   return (
     <MainLayout>
-      about
+      <div>aasda</div>
     </MainLayout>
   )
 }
 
-export default about
+export default Contact
