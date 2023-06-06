@@ -1,5 +1,6 @@
 import MainLayout from '@/components/layouts/main-layout'
 import React from 'react'
+import '../../app/globals.css'
 
 function Contact() {
   return (
