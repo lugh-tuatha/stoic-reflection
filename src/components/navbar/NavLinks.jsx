@@ -1,29 +1,34 @@
+import Link from 'next/link'
 import React from 'react'
 
 function Navlinks() {
   const links = [
     {
-      name: "Platforms"
+      name: "Platforms",
+      href: "/platforms",
     },
     {
-      name: "Careers"
+      name: "Careers",
+      href: "/careers",
     },
     {
-      name: "About"
+      name: "About",
+      href: "/about",
     },
     {
-      name: "Home"
+      name: "Home",
+      href: "/",
     },
   ]
 
   return (
     <>
       {links.map((link) => (
-        <div>
+        <Link href={link.href}>
           <div className='cursor-pointer mb-4 md:mb-0'>
             <h1>{link.name}</h1>
           </div>
-        </div>
+        </Link>
       ))}
     </>
   )
