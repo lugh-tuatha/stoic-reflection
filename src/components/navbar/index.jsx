@@ -10,7 +10,6 @@ import NavLinks from './NavLinks';
 
 function Navbar() {
   const [open, setOpen] = useState(true)
-  console.log(open)
 
   return (
     <nav className='flex items-center justify-between py-4'>
@@ -26,10 +25,7 @@ function Navbar() {
       </div>
 
       <div>
-        <ul className='md:flex items-center hidden gap-8 cursor-pointer font-semibold'>
-          <li>
-            <Link href="/expertise">Expertise</Link>
-          </li>
+        <ul className='md:flex items-center hidden gap-8 cursor-pointer'>
           <NavLinks />
 
           <div className='md:block hidden'>
@@ -47,7 +43,7 @@ function Navbar() {
           `}>
         <ul className='w-10/12 mx-auto'>
           <li className='mb-4 md:mb-0'>
-            <Link href="">Expertise</Link>
+            <Link href="/">Home</Link>
           </li>
           
           <NavLinks />
