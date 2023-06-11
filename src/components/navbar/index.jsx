@@ -12,9 +12,9 @@ function Navbar() {
   const [open, setOpen] = useState(true)
 
   return (
-    <nav className='flex items-center justify-between py-4'>
-      <div className='z-50 cursor-pointer flex justify-between items-center w-10/12 mx-auto md:mx-0 md:w-auto '>
-        <Image 
+    <nav className='flex items-center justify-between py-4 text-secondary font-semibold '>
+      <div className='z-50 cursor-pointer flex justify-between items-center w-full md:mx-0 md:w-auto '>
+        <Image  
           src="/assets/logos/KH-LOGO2023.png"
           alt='Brand logo'
           width={40}
@@ -39,13 +39,9 @@ function Navbar() {
       {/* Mobile nav */}
       <div  className={`
           md:hidden absolute w-full bg-white h-full py-20 bottom-0
-          duration-500 ${open ? 'opacity-0' : 'opacity-1'}
+          duration-500 text-lg ${open ? 'opacity-0' : 'opacity-1'}
           `}>
-        <ul className='w-10/12 mx-auto'>
-          <li className='mb-4 md:mb-0'>
-            <Link href="/">Home</Link>
-          </li>
-          
+        <ul>
           <NavLinks />
 
           <div>

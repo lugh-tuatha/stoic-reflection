@@ -6,9 +6,32 @@
   --foreground-rgb: #000;
   --background: #fff;
   --primary: #9D72E8;
+
+  --fs-xl: 4rem;
+  --fs-lg: 3rem;
+  --fs-600: 1.5rem;
+  --fs-400: 1.125rem;
+}
+
+@media (min-width: 400px) {
+  :root {
+    --fs-xl: 5rem;
+    --fs-lg: 4rem;
+    --fs-600: 1.25rem;
+    --fs-400: 1rem;
+  }
 }
 
 body {
   color: rgb(var(--foreground-rgb));
   background: var(--background);
+}
+
+.border-t-12{
+  border-top-width: 12px;
+}
+
+.home .heading{
+  font-size: var(--fs-lg);
+  line-height: 1.25;
 }
