@@ -8,17 +8,38 @@
   --primary: #9D72E8;
 
   --fs-xl: 4rem;
-  --fs-lg: 3rem;
+  --fs-lg: 2rem;
+  --fs-700: 1.75rem;
   --fs-600: 1.5rem;
   --fs-400: 1.125rem;
 }
 
 @media (min-width: 400px) {
   :root {
-    --fs-xl: 5rem;
+    --fs-xl: 4rem;
+    --fs-lg: 3rem;
+    --fs-600: 1.5rem;
+    --fs-400: 1.125rem;
+  }
+}
+
+@media (min-width: 850px) {
+  :root {
+    --fs-xl: 4rem;
+    --fs-lg: 3.25rem;
+    --fs-600: 1.5rem;
+    --fs-400: 1.125rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  :root {
+    --fs-xl: 6rem;
     --fs-lg: 4rem;
-    --fs-600: 1.25rem;
-    --fs-400: 1rem;
+    --fs-700: 3rem;
+    --fs-600: 2rem;
+    --fs-500: 1.5rem;
+    --fs-400: 1.125rem;
   }
 }
 
@@ -27,11 +48,31 @@ body {
   background: var(--background);
 }
 
+/* tailwind custom classes */
 .border-t-12{
   border-top-width: 12px;
 }
 
-.home .heading{
+/* tailwind apply */
+/* .flex-center{
+  @apply ;
+} */
+
+/* typography */
+.heading{
   font-size: var(--fs-lg);
   line-height: 1.25;
+}
+
+.heading-2 {
+  font-size: var(--fs-700);
+  line-height: 1.25;
+}
+
+.title{
+  font-size: var(--fs-500);
+}
+
+.desc{
+  font-size: var(--fs-400);
 }
