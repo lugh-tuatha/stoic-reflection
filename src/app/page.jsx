@@ -6,6 +6,7 @@ import Button from '@/components/button';
 import Image from 'next/image';
 
 import { expertise } from '../data/Expertise'
+import { platforms } from '../data/Platforms'
 
 export default function Home() {
   return (
@@ -43,6 +44,28 @@ export default function Home() {
             </div>
           ))}
         </div>
+      </div>  
+
+      <div className='mt-8 flex gap-8'>
+        <div className='w-1/3'>
+          <h1 className='heading-2 font-bold text-secondary'>Platforms</h1>
+          <p className="desc">We collaborate with top technology providers worldwide and offer diverse expertise in implementing various solutions. Our platform-agnostic approach ensures we recommend the best solution for success. </p>
+          <Button>Explore Platforms</Button>
+        </div>
+
+        <div className="platform-icons w-2/3 flex gap-4 flex-wrap">
+          {platforms.map((platforms_item) => (
+          <div className='h-28 w-52 flex items-center'>
+            <Image  
+              src={platforms_item.logo}
+              alt='Progress icon'
+              width={300}
+              height={75}
+              className=''/>
+          </div>
+          ))}
+        </div>
+
       </div>  
     </MainLayout>
   );
