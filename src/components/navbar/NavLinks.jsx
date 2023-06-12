@@ -15,7 +15,7 @@ function Navlinks() {
             <h1 className='flex justify-between items-center md:pr-0 pr-5 group mx-auto hover:underline' onClick={() =>menu !== link.name ? setMenu(link.name) : setMenu("")}>
               {link.name}
 
-              <span className='md:hidden mr-8'>
+              <span className='md:hidden'>
                 {link.name === "Expertise" || link.name === "Platforms" ? (menu === link.name ? <BsChevronUp /> : <BsChevronDown />) : null }
               </span>
 

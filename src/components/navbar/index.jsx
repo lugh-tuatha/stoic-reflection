@@ -38,7 +38,7 @@ function Navbar() {
 
       {/* Mobile nav */}
       <div  className={`
-          md:hidden absolute w-full bg-white h-full py-20 bottom-0
+          md:hidden absolute top-0 w-11/12 bg-white min-h-full h-auto py-20 
           duration-500 text-lg ${open ? 'opacity-0' : 'opacity-1'}
           `}>
         <ul>
