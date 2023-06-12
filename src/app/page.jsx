@@ -22,7 +22,7 @@ export default function Home() {
           alt='Home hero'
           width={500}
           height={500}
-          className='mx-auto lg:mx-0 w-full md:w-1/2'/>
+          className='mx-auto lg:mx-0 w-full h-full home-hero'/>
       </div>
 
       <div>

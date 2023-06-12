@@ -87,3 +87,9 @@ body {
 .desc{
   font-size: var(--fs-400);
 }
+
+/* styles */
+.home-hero{
+  max-width: 500px;
+  max-height: 500px;
+}
