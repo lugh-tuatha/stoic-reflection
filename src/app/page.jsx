@@ -11,6 +11,7 @@ import { platforms } from '../data/Platforms'
 export default function Home() {
   return (
     <MainLayout>
+      {/*--------------- Home hero ---------------*/}
       <div className='lg:flex justify-between'>
         <div className="w-full lg:w-1/2 mt-4 home">
           <h1 className='bold font-bold heading'>Forms Holistic Digital Approaches to Grow Online Presence.</h1>
@@ -26,9 +27,9 @@ export default function Home() {
           className='mx-auto lg:mx-0 w-full h-full home-hero'/>
       </div>
 
+      {/*--------------- Expertise ---------------*/}
       <div>
         <h1 className='heading-2 font-bold text-secondary'>Our expertise</h1>
-
         <div className='my-4 gap-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4'>
           {expertise.map((expertise_items) => (
             <div className='flex flex-col'>
@@ -37,15 +38,15 @@ export default function Home() {
                 alt='Expertise icon'
                 width={75}
                 height={75}/>
-
-                <h2 className='title font-bold text-secondary'>{expertise_items.title}</h2>
-                <p className='my-2'>{expertise_items.desc}</p>
-                <p className='font-bold hover:underline cursor-pointer text-secondary hover:text-primary mt-auto'>Learn more &gt;</p>
+              <h2 className='title font-bold text-secondary'>{expertise_items.title}</h2>
+              <p className='my-2'>{expertise_items.desc}</p>
+              <p className='font-bold hover:underline cursor-pointer text-secondary hover:text-primary mt-auto'>Learn more &gt;</p>
             </div>
           ))}
         </div>
       </div>  
 
+      {/*--------------- Platforms ---------------*/}
       <div className='mt-8 flex gap-8'>
         <div className='w-1/3'>
           <h1 className='heading-2 font-bold text-secondary'>Platforms</h1>
@@ -53,9 +54,9 @@ export default function Home() {
           <Button>Explore Platforms</Button>
         </div>
 
-        <div className="platform-icons w-2/3 flex gap-4 flex-wrap">
+        <div className="platform-icons w-2/3 flex justify-end gap-4 flex-wrap">
           {platforms.map((platforms_item) => (
-          <div className='h-28 w-52 flex items-center'>
+          <div className='h-28 w-44 flex items-center'>
             <Image  
               src={platforms_item.logo}
               alt='Progress icon'
@@ -65,7 +66,6 @@ export default function Home() {
           </div>
           ))}
         </div>
-
       </div>  
     </MainLayout>
   );
