@@ -12,7 +12,7 @@ function Navlinks() {
       {links.map((link) => (
         <div className='cursor-pointer mb-4 md:mb-0 group'>
           <Link href={link.href}>
-            <h1 className='flex justify-between items-center md:pr-0 pr-5 group mx-auto hover:underline' onClick={() =>menu !== link.name ? setMenu(link.name) : setMenu("")}>
+            <h1 className='flex-between items-center md:pr-0 pr-5 group mx-auto hover:underline' onClick={() =>menu !== link.name ? setMenu(link.name) : setMenu("")}>
               {link.name}
 
               <span className='md:hidden'>

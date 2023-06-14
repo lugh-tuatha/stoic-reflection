@@ -4,7 +4,7 @@ import Footer from '../footer'
 
 function MainLayout({ children }) {
   return (
-    <div  className='w-11/12 md:w-10/12 mx-auto'>
+    <div  className='w-11/12 container mx-auto'>
       <Navbar />
         <main>
           {children}

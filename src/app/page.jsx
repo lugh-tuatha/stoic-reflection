@@ -50,19 +50,18 @@ export default function Home() {
       <div className='mt-8 flex gap-8'>
         <div className='w-1/3'>
           <h1 className='heading-2 font-bold text-secondary'>Platforms</h1>
-          <p className="desc">We collaborate with top technology providers worldwide and offer diverse expertise in implementing various solutions. Our platform-agnostic approach ensures we recommend the best solution for success. </p>
+          <p className="desc my-2">We collaborate with top technology providers worldwide and offer diverse expertise in implementing various solutions. Our platform-agnostic approach ensures we recommend the best solution for success. </p>
           <Button>Explore Platforms</Button>
         </div>
 
-        <div className="platform-icons w-2/3 flex justify-end gap-4 flex-wrap">
+        <div className="platform-icons w-2/3 flex-between flex-wrap">
           {platforms.map((platforms_item) => (
           <div className='h-28 w-44 flex items-center'>
-            <Image  
+            <Image
               src={platforms_item.logo}
               alt='Progress icon'
               width={300}
-              height={75}
-              className=''/>
+              height={75}/>
           </div>
           ))}
         </div>

@@ -68,9 +68,9 @@ body {
 }
 
 /* tailwind apply */
-/* .flex-center{
-  @apply ;
-} */
+.flex-between{
+  @apply flex justify-between;
+}
 
 /* typography */
 .heading{
