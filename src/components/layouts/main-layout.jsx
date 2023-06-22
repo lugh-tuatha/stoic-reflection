@@ -4,13 +4,17 @@ import Footer from '../footer'
 
 function MainLayout({ children }) {
   return (
-    <div  className='w-11/12 container mx-auto'>
-      <Navbar />
-        <main>
-          {children}
-        </main>
+    <div className="div">
+      <div className='w-11/12 container mx-auto'>
+        <Navbar />
+          <main>
+            {children}
+          </main>
+      </div>
+
       <Footer />
     </div>
+
   )
 }
 
