@@ -74,6 +74,14 @@ body {
   @apply flex justify-between;
 }
 
+.flex-middle{
+  @apply flex items-center;
+}
+
+.lg-flex-between{
+  @apply lg:flex justify-between
+}
+
 /* typography */
 .heading{
   font-size: var(--fs-lg);

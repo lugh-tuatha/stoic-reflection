@@ -10,7 +10,7 @@ function AboutIntro() {
 
       </div>
 
-      <div className='block lg:flex justify-between mt-4'>
+      <div className='block lg-flex-between mt-4'>
         <div className='w-full lg:w-1/2 desc flex flex-col gap-2 text-justify'>
           <h1 className="heading-3 text-left font-bold text-secondary">Empower Your Business with Know How Tech's Digital Transformation Solutions</h1>
           <p>In recent years, companies have been transitioning to more modern methods of marketing. We offer a digital solution to help traditional businesses make the switch to a more innovative approach. You may think this is just a fantasy, but it is actually a reality. We are here to prove that it is not only possible, but it is happening.</p>

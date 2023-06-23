@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <MainLayout>
       {/*--------------- Home hero ---------------*/}
-      <div className='lg:flex justify-between'>
+      <div className='lg-flex-between'>
         <div className="w-full lg:w-1/2 mt-4 home">
           <h1 className='bold font-bold heading'>Forms Holistic Digital Approaches to Grow Online Presence.</h1>
           <p className='desc mt-2 mb-4'>The Know How Tech is a leader in the digital realm, providing businesses with the tools to transition from traditional to digital operations. Our platform offers a comprehensive set of resources to help businesses increase their profitability.</p>
@@ -56,7 +56,7 @@ export default function Home() {
 
         <div className="platform-icons w-2/3 flex-between flex-wrap">
           {platforms.map((platforms_item) => (
-          <div className='h-28 w-44 flex items-center'>
+          <div className='h-28 w-44 flex-middle'>
             <Image
               src={platforms_item.logo}
               alt='Progress icon'
