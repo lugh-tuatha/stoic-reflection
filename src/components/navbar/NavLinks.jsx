@@ -10,7 +10,7 @@ function Navlinks() {
   return (
     <>
       {links.map((link) => (
-        <div className='cursor-pointer mb-4 md:mb-0 group'>
+        <div key={link.id} className='cursor-pointer mb-4 md:mb-0 group'>
           <Link href={link.href}>
             <h1 className='flex-between items-center md:pr-0 pr-5 group mx-auto hover:underline' onClick={() =>menu !== link.name ? setMenu(link.name) : setMenu("")}>
               {link.name}
@@ -34,7 +34,7 @@ function Navlinks() {
                 <div className='bg-white shadow-md shadow-gray rounded-md p-4 font-normal border-t-12 border-secondary'>
                   {
                     link.sublinks.map((mysublinks) => (
-                      <li className='mb-2 hover:underline'>
+                      <li key={mysublinks.id} className='mb-2 hover:underline'>
                         <Link href={mysublinks.link}>
                           {mysublinks.name}
                         </Link>
@@ -50,7 +50,7 @@ function Navlinks() {
               `}>
                 {
                   link.sublinks.map((slinks)=>(
-                    <div>
+                    <div key={slinks.id}>
                       <li className='py-2 hover:underline'>
                         <Link href={slinks.link}>{slinks.name}</Link>
                       </li>
