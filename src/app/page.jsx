@@ -17,7 +17,7 @@ export default function Home() {
       {/*--------------- Home hero ---------------*/}
       <div className='lg-flex-between'>
         <div className="w-full lg:w-1/2 mt-4 home">
-          <h1 className='bold font-bold heading'>Forms Holistic Digital Approaches to Grow Online Presence.</h1>
+          <h1 className='heading'>Forms Holistic Digital Approaches to Grow Online Presence.</h1>
           <p className='desc mt-2 mb-4'>The Know How Tech is a leader in the digital realm, providing businesses with the tools to transition from traditional to digital operations. Our platform offers a comprehensive set of resources to help businesses increase their profitability.</p>
           <Button>Get started</Button>
         </div>
@@ -32,7 +32,7 @@ export default function Home() {
 
       {/*--------------- Expertise ---------------*/}
       <div>
-        <h1 className='heading-2 font-bold text-secondary'>Our expertise</h1>
+        <h1 className='heading-2'>Our expertise</h1>
         <div className='my-4 gap-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4'>
           {expertise.map((expertise_items) => (
             <div className='flex flex-col'>
@@ -52,7 +52,7 @@ export default function Home() {
       {/*--------------- Platforms ---------------*/}
       <div className='mt-8 xl:flex gap-8'>
         <div className='xl:w-1/3'>
-          <h1 className='heading-2 font-bold text-secondary'>Platforms</h1>
+          <h1 className='heading-2'>Platforms</h1>
           <p className="desc my-2">We collaborate with top technology providers worldwide and offer diverse expertise in implementing various solutions. Our platform-agnostic approach ensures we recommend the best solution for success. </p>
           <Button>Explore Platforms</Button>
         </div>
@@ -74,7 +74,7 @@ export default function Home() {
       <div className='mt-10 lg-flex-between gap-10'>
         <div className='lg:w-1/2'>
           <p className='title'>Stay Connected with TheKHTech NewsLetter</p>
-          <h1 className='heading-2 font-bold text-secondary lg:mb-12'>Be the first to know about our latest posts and updates</h1>
+          <h1 className='heading-2 lg:mb-12'>Be the first to know about our latest posts and updates</h1>
           <p className='desc my-4 lg:mb-16'>Sign up for our newsletter and never miss a thing! Get exclusive access to our latest posts, updates on our website, and other special offers.</p>
           <p className='opacity-80 mb-1'>FOLLOW US ON SOCIAL MEDIA</p>
           <div className="flex gap-4 cursor-pointer text-primary mb-4 lg:mb-0">
@@ -97,10 +97,8 @@ export default function Home() {
             <input type="email" placeholder='Email Address' className='input-styles'/> <br />
           </div>
           <Button>SUBSCRIBE</Button>
-
         </div>
       </div>
-
     </MainLayout>
   );
 }

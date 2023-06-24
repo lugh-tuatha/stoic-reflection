@@ -6,6 +6,7 @@
   --foreground-rgb: #000;
   --background: #fff;
   --primary: #9D72E8;
+  --secondary: #003057;
 
   --fs-xl: 4rem;
   --fs-lg: 2rem;
@@ -83,14 +84,19 @@ body {
 }
 
 /* typography */
+.heading,
+.heading-2{
+  font-weight: bold;
+  color: var(--secondary);
+  line-height: 1;
+}
+
 .heading{
   font-size: var(--fs-lg);
-  line-height: 1;
 }
 
 .heading-2 {
   font-size: var(--fs-700);
-  line-height: 1;
 }
 
 .heading-3{
