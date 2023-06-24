@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import React, { useState } from 'react'
-import { links } from '../../data/NavLinks'
+import { links } from '@/data/NavLinks'
 
 import { BsChevronDown, BsChevronUp } from "react-icons/bs";
 

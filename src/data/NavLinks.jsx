@@ -1,13 +1,16 @@
 export const links = [
   {
+    id: 1,
     name: "Home",
     href: "/",
   },
   {
+    id: 2,
     name: "About",
     href: "/about",
   },
   {
+    id: 3,
     name: "Expertise",
     href: "",
     submenu: true,
@@ -23,11 +26,12 @@ export const links = [
     ]
   },
   {
+    id: 4,
     name: "Platforms",
     href: "",
     submenu: true,
     sublinks: [
-      { name: 'Platforms overview', link: "/" },
+      { name: 'Platforms overview', link: "/platforms/platforms-overview" },
       { name: 'Progress Sitefinity', link: "/" },
       { name: 'WordPress', link: "/" },
       { name: 'Drupal', link: "/" },
@@ -49,6 +53,7 @@ export const links = [
     ]
   },
   {
+    id: 5,
     name: "Careers",
     href: "/careers",
   },

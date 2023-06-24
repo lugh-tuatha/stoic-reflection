@@ -7,7 +7,7 @@ import * as Fa from "react-icons/fa";
 import * as Ai from "react-icons/ai";
 import * as Gr from "react-icons/gr";
 
-import { links } from '../../data/NavLinks';
+import { links } from '@/data/NavLinks';
 import Link from 'next/link';
 
 function Footer() {
@@ -77,7 +77,7 @@ function Footer() {
             <h1 className='title font-bold mb-4'>Quick Links</h1>
             <ul className='cursor-pointer'>
               {links.map((page_links) => (
-                <li className='mb-2 hover:underline'>
+                <li key={page_links.id} className='mb-2 hover:underline'>
                   <Link href={page_links.href}>{page_links.name}</Link>
                 </li>
               ))}

@@ -5,8 +5,8 @@ import Button from '@/components/button';
 
 import Image from 'next/image';
 
-import { expertise } from '../data/Expertise'
-import { platforms } from '../data/Platforms'
+import { expertise } from '@/data/Expertise'
+import { platforms } from '@/data/Platforms'
 
 export default function Home() {
   return (
@@ -55,7 +55,7 @@ export default function Home() {
         </div>
 
         <div className="platform-icons w-2/3 flex-between flex-wrap">
-          {platforms.map((platforms_item) => (
+          {platforms.slice(0, 10).map((platforms_item) => (
           <div className='h-28 w-44 flex-middle'>
             <Image
               src={platforms_item.logo}
