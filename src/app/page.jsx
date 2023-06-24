@@ -5,6 +5,9 @@ import Button from '@/components/button';
 
 import Image from 'next/image';
 
+import * as Fa from "react-icons/fa";
+import * as Gr from "react-icons/gr";
+
 import { expertise } from '@/data/Expertise'
 import { platforms } from '@/data/Platforms'
 
@@ -47,16 +50,16 @@ export default function Home() {
       </div>  
 
       {/*--------------- Platforms ---------------*/}
-      <div className='mt-8 flex gap-8'>
-        <div className='w-1/3'>
+      <div className='mt-8 xl:flex gap-8'>
+        <div className='xl:w-1/3'>
           <h1 className='heading-2 font-bold text-secondary'>Platforms</h1>
           <p className="desc my-2">We collaborate with top technology providers worldwide and offer diverse expertise in implementing various solutions. Our platform-agnostic approach ensures we recommend the best solution for success. </p>
           <Button>Explore Platforms</Button>
         </div>
 
-        <div className="platform-icons w-2/3 flex-between flex-wrap">
+        <div className="xl:w-2/3 mt-4 xl:mt-0 gap-4 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-5">
           {platforms.slice(0, 10).map((platforms_item) => (
-          <div className='h-28 w-44 flex-middle'>
+          <div className='flex-middle'>
             <Image
               src={platforms_item.logo}
               alt='Progress icon'
@@ -66,6 +69,38 @@ export default function Home() {
           ))}
         </div>
       </div>  
+
+      {/*--------------- Newsletter ---------------*/}
+      <div className='mt-10 lg-flex-between gap-10'>
+        <div className='lg:w-1/2'>
+          <p className='title'>Stay Connected with TheKHTech NewsLetter</p>
+          <h1 className='heading-2 font-bold text-secondary lg:mb-12'>Be the first to know about our latest posts and updates</h1>
+          <p className='desc my-4 lg:mb-16'>Sign up for our newsletter and never miss a thing! Get exclusive access to our latest posts, updates on our website, and other special offers.</p>
+          <p className='opacity-80 mb-1'>FOLLOW US ON SOCIAL MEDIA</p>
+          <div className="flex gap-4 cursor-pointer text-primary mb-4 lg:mb-0">
+            <Fa.FaFacebookF size={26} />
+            <Fa.FaTwitter size={26} />
+            <Fa.FaLinkedinIn size={26} />
+            <Fa.FaYoutube size={26} />
+          </div>
+        </div>
+
+        <div className='bg-secondary h-96 rounded-xl p-8 lg:w-1/2 xl:w-1/3'>
+          <p className='title text-white'>Join Our Newsletter</p>
+          <p className='desc opacity-80 text-white'>Stay Up-to-Date with EmoWall News and Updates</p>
+          <div className='mt-6 mb-4'>
+            <Fa.FaUserCircle className='absolute mt-1 text-primary text-2xl'/>
+            <input type="text" placeholder='Full Name' className='input-styles'/> <br />
+          </div>
+          <div className='mt-6 mb-4'>
+            <Gr.GrMail className='absolute mt-1 text-primary text-2xl'/>
+            <input type="email" placeholder='Email Address' className='input-styles'/> <br />
+          </div>
+          <Button>SUBSCRIBE</Button>
+
+        </div>
+      </div>
+
     </MainLayout>
   );
 }
