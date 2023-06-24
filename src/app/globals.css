@@ -71,6 +71,10 @@ body {
 }
 
 /* tailwind apply */
+.button{
+  @apply py-2 px-4 rounded-md font-semibold bg-primary hover:underline;
+}
+
 .flex-between{
   @apply flex justify-between;
 }
