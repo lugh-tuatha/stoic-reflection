@@ -35,7 +35,7 @@ export default function Home() {
         <h1 className='heading-2'>Our expertise</h1>
         <div className='my-4 gap-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4'>
           {expertise.map((expertise_items) => (
-            <div className='flex flex-col'>
+            <div key={expertise_items.id} className='flex flex-col'>
               <Image  
                 src={expertise_items.icon}
                 alt='Expertise icon'
@@ -59,7 +59,7 @@ export default function Home() {
 
         <div className="xl:w-2/3 mt-4 xl:mt-0 gap-4 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-5">
           {platforms.slice(0, 10).map((platforms_item) => (
-          <div className='flex-middle'>
+          <div key={platforms_item.id} className='flex-middle'>
             <Image
               src={platforms_item.logo}
               alt='Progress icon'

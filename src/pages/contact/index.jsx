@@ -1,7 +1,7 @@
 import MainLayout from '@/components/layouts/main-layout'
 import React from 'react'
 import '../../app/globals.css'
-import ContactForm from '@/components/contact-form'
+import ContactForm from '@/components/contact/contact-form'
 
 function Contact() {
   return (

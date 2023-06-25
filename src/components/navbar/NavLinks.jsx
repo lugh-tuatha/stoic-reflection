@@ -58,7 +58,6 @@ function Navlinks() {
                   ))
                 }
               </div>
-
             </div>
           )}
         </div>
