@@ -1,3 +1,7 @@
 .forms-input{
   @apply border border-black py-2 px-4 outline-none bg-transparent;
 }
+
+.form-textarea{
+  @apply w-full h-40 mt-2 py-2 px-4 border border-black outline-none;
+}

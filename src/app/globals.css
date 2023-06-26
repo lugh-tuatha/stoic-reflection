@@ -87,6 +87,9 @@ body {
   @apply lg:flex justify-between
 }
 
+.md-flex-between {
+  @apply md:flex justify-between
+}
 /* typography */
 .heading,
 .heading-2{

@@ -25,7 +25,7 @@ function Footer() {
           <Button>Subscribe to newsletter</Button>
         </div>
 
-        <div className='md:flex justify-between w-full lg:w-3/4'>
+        <div className='md-flex-between w-full lg:w-3/4'>
           <div className='mb-6'>
             <h1 className='title font-bold mb-4'>Contact</h1>
             <ul>
@@ -41,7 +41,7 @@ function Footer() {
                     width={25}
                     height={10}
                     className='inline mr-2'/>
-                  <span>+123 456 769</span>
+                  <span>(516) 587-2737</span>
                 </div>
 
                 <div>
@@ -60,7 +60,8 @@ function Footer() {
                   <p>Email</p>
                   <Gr.GrMail/>
                 </div>
-                <span>email@example.com</span>
+                <span className='block mb-2'>info@thekhtech.com</span>
+                <span>ibrahim@thekhtech.com</span>
               </li>
             </ul>
           </div>
@@ -68,8 +69,8 @@ function Footer() {
           <div className='mb-6'>
             <h1 className='title font-bold mb-4'>Locations</h1>
             <ul>
-              <li className='mb-2'>Philippines</li>
-              <li>New york</li>
+              <li className='mb-2'>New york</li>
+              <li>Philippines</li>
             </ul>
           </div>
 

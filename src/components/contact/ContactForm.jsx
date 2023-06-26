@@ -13,7 +13,7 @@ function ContactForm() {
           <input type="text" placeholder='Phone Number' className='forms-input'/>
           <input type="text" placeholder='Website URL' className='forms-input'/>
         </div>
-        <textarea placeholder='Please provide a description of your need or project' className='w-full h-40 mt-2 py-2 px-4 border border-black outline-none'></textarea>
+        <textarea placeholder='Please provide a description of your need or project' className='form-textarea'></textarea>
 
         <input type="submit" className='button'/>
       </form>
