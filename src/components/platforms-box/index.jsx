@@ -11,7 +11,7 @@ function PlatformsBox() {
           <div className='h-32 flex-middle justify-center'>
             <Image  
               src={platforms_items.logo}
-              alt='Brand logo'
+              alt='platforms logo'
               width={300}
               height={10}
               className='inline mr-2'/>

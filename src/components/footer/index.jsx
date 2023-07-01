@@ -41,7 +41,7 @@ function Footer() {
                     width={25}
                     height={10}
                     className='inline mr-2'/>
-                  <span>(516) 587-2737</span>
+                  <span>(516) 366-2659</span>
                 </div>
 
               </li>
