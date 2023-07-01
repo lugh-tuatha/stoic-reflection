@@ -44,15 +44,6 @@ function Footer() {
                   <span>(516) 587-2737</span>
                 </div>
 
-                <div>
-                  <Image  
-                    src="/assets/icons/flag/ph.png"
-                    alt='Brand logo'
-                    width={25}
-                    height={10}
-                    className='inline mr-2'/>
-                  <span>+63 908 710 5298</span>
-                </div>
               </li>
 
               <li>
@@ -61,7 +52,7 @@ function Footer() {
                   <Gr.GrMail/>
                 </div>
                 <span className='block mb-2'>info@thekhtech.com</span>
-                <span>ibrahim@thekhtech.com</span>
+                <span>sales@thekhtech.com</span>
               </li>
             </ul>
           </div>
@@ -70,7 +61,6 @@ function Footer() {
             <h1 className='title font-bold mb-4'>Locations</h1>
             <ul>
               <li className='mb-2'>New york</li>
-              <li>Philippines</li>
             </ul>
           </div>
 

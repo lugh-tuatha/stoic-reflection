@@ -12,8 +12,8 @@ export const links = [
   {
     id: 3,
     name: "Expertise",
-    href: "",
-    submenu: true,
+    href: "/expertise",
+    submenu: false,
     sublinks: [
       { id: 1, name: 'Expertise overview', link: "/" },
       { id: 2, name: 'Client Online Security', link: "/" },
@@ -28,8 +28,8 @@ export const links = [
   {
     id: 4,
     name: "Platforms",
-    href: "",
-    submenu: true,
+    href: "/platforms",
+    submenu: false,
     sublinks: [
       { id: 1, name: 'Platforms overview', link: "/platforms/platforms-overview" },
       { id: 2, name: 'Progress Sitefinity', link: "/" },
@@ -51,10 +51,5 @@ export const links = [
       { id: 18, name: 'Magento', link: "/" },
       { id: 19, name: 'Idev', link: "/" },
     ]
-  },
-  {
-    id: 5,
-    name: "Careers",
-    href: "/careers",
   },
 ]

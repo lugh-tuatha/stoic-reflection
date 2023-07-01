@@ -16,11 +16,11 @@ function Navlinks() {
               {link.name}
 
               <span className='md:hidden'>
-                {link.name === "Expertise" || link.name === "Platforms" ? (menu === link.name ? <BsChevronUp /> : <BsChevronDown />) : null }
+                {link.submenu === true ? (menu === link.name ? <BsChevronUp /> : <BsChevronDown />) : null }
               </span>
 
               <span className='mt-1 ml-1 md:block hidden group-hover:rotate-180'>
-                {link.name === "Expertise" || link.name === "Platforms" ? <BsChevronDown /> : null }
+                {link.submenu === true ? <BsChevronDown /> : null }
               </span>
             </h1>
           </Link>
