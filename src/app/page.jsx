@@ -50,7 +50,7 @@ export default function Home() {
       </div>  
 
       {/*--------------- Platforms ---------------*/}
-      <div className='mt-8 xl:flex gap-8'>
+      <div className='my-12 xl:flex gap-8'>
         <div className='xl:w-1/3'>
           <h1 className='heading-2'>Platforms</h1>
           <p className="desc my-2">We collaborate with top technology providers worldwide and offer diverse expertise in implementing various solutions. Our platform-agnostic approach ensures we recommend the best solution for success. </p>
@@ -71,7 +71,7 @@ export default function Home() {
       </div>  
 
       {/*--------------- Newsletter ---------------*/}
-      <div className='mt-10 lg-flex-between gap-10'>
+      <div className='lg-flex-between gap-10'>
         <div className='lg:w-1/2'>
           <p className='title'>Stay Connected with TheKHTech NewsLetter</p>
           <h1 className='heading-2 lg:mb-12'>Be the first to know about our latest posts and updates</h1>

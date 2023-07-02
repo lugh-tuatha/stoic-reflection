@@ -2,3 +2,11 @@
   max-width: 400px;
   max-height: 400px;
 }
+
+.mv-title{
+  @apply font-bold my-2 text-primary;
+}
+
+.mv-container{
+  @apply lg:w-1/2 bg-secondary rounded-xl p-8;
+}

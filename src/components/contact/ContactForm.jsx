@@ -18,7 +18,7 @@ function ContactForm() {
       </div>
       <div className='relative inputBox mt-5'>
         <textarea className='form-textarea' required/>
-        <span className='absolute left-0 py-3 text-lg pl-4 pointer-events-none duration-500'>Please provide a description of your need or project</span>
+        <span className='absolute left-0 py-3 text-lg pl-4 pointer-events-none duration-500'>Description of your need or project</span>
       </div>
 
       <input type="submit" className='button '/>

@@ -1,4 +1,5 @@
 import React from 'react'
+import './about.css'
 
 import Image from 'next/image'
 
@@ -8,24 +9,24 @@ function AboutMVO() {
     <h1 className='mb-4 heading-3 font-bold text-secondary'>With The Know How Tech, business function better.</h1>
 
       <div className='lg-flex-between gap-8 text-white text-center'>
-        <div className='lg:w-1/2 bg-secondary rounded-xl p-8 mb-6 lg:mb-0'>
+        <div className='mv-container mb-6 lg:mb-0'>
           <Image  
-            src="/assets/illustration/ai8.jpeg"
+            src="/assets/svg/mission.svg"
             alt='About hero'
             width={100}
             height={300}
             className='mx-auto'/>
-          <h1 className='title font-bold my-2 text-primary'>MISSION</h1>
+          <h1 className='mv-title title'>MISSION</h1>
           <p className='text-justify'>Our team of experts is working to revolutionize your business, making it a leader in digital solutions and strategies. We are determined to make sure your business is at the forefront of technological advancement.</p>
         </div>
-        <div className='lg:w-1/2 bg-secondary rounded-xl p-8'>
+        <div className='mv-container'>
           <Image  
-            src="/assets/illustration/ai8.jpeg"
+            src="/assets/svg/vision.svg"
             alt='About hero'
             width={100}
             height={300}
             className='mx-auto'/>
-          <h1 className='title font-bold my-2 text-primary'>VISION</h1>
+          <h1 className='mv-title title'>VISION</h1>
           <p className='text-justify'>The Know How Tech hopes to see all of our clients taking advantage of the digital world and creating content to reach a larger audience. We are dedicated to enhancing your online presence, formulating your digital strategy, and executing digital marketing plans to help you reach your goal.</p>
         </div>
       </div>

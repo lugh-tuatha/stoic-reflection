@@ -18,8 +18,11 @@
   letter-spacing: 0.1em;
 }
 
+
 .inputBox input:valid,
-.inputBox input:focus{
+.inputBox input:focus,
+.inputBox textarea:valid,
+.inputBox textarea:focus{
   border: 2px solid var(--primary);
 }
 

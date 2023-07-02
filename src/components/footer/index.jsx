@@ -16,11 +16,11 @@ function Footer() {
       <div className='lg-flex-between mt-20 py-10 gap-10 w-11/12 container mx-auto '>
         <div className='w-full lg:w-1/4 mb-6'>
           <Image  
-            src="/assets/logos/KH-LOGO2023.png"
+            src="/assets/logos/KH-LOGO.png"
             alt='Brand logo'
             width={40}
             height={40}/>
-          <p className='mt-2 mb-4'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam inventore repudiandae cumque id distinctio perspiciatis!</p>
+          <p className='mt-2 mb-4'>Sign up for our newsletter and never miss a thing! Get exclusive access to our latest posts, updates on our website, and other special offers.</p>
           <input placeholder='ex. johndoe@gmail.com' type="email" className='mb-4 w-full border rounded-md py-2 px-4 focus:outline-none bg-transparent border-primary'/>
           <Button>Subscribe to newsletter</Button>
         </div>
