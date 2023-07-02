@@ -1,6 +1,5 @@
 import './app.css'
 
-import MainLayout from '@/components/layouts/main-layout'
 import Button from '@/components/button';
 
 import Image from 'next/image';
@@ -13,7 +12,7 @@ import { platforms } from '@/data/Platforms'
 
 export default function Home() {
   return (
-    <MainLayout>
+    <div>
       {/*--------------- Home hero ---------------*/}
       <div className='lg-flex-between'>
         <div className="w-full lg:w-1/2 mt-4 home">
@@ -99,6 +98,6 @@ export default function Home() {
           <Button>SUBSCRIBE</Button>
         </div>
       </div>
-    </MainLayout>
+    </div>
   );
 }
