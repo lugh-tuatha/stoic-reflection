@@ -119,6 +119,11 @@ body {
   font-size: var(--fs-400);
 }
 
+/* reusable css */
+.box-shadow{
+  box-shadow: 0px 0px 16px 6px rgba(0, 0, 0, 0.33);
+}
+
 /* styles */
 .home-hero{
   max-width: 500px;

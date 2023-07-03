@@ -1,8 +1,11 @@
+'use client'
+import React, { useState, useRef, useEffect } from 'react';
 import './app.css'
+import Image from 'next/image';
 
 import Button from '@/components/button';
-
-import Image from 'next/image';
+import Avatar from '@/components/avatar';
+import SupportWindow from '@/components/support-window';
 
 import * as Fa from "react-icons/fa";
 import * as Gr from "react-icons/gr";
@@ -11,6 +14,21 @@ import { expertise } from '@/data/Expertise'
 import { platforms } from '@/data/Platforms'
 
 export default function Home() {
+  const ref = useRef(null)
+  const [visible, setVisible] = useState(false)
+  
+  useEffect(() => {
+    function handleClickOutside(event) {
+      if (ref.current && !ref.current.contains(event.target)) {
+        setVisible(false)
+      }
+    }
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    }
+  }, [ref])
+
   return (
     <div>
       {/*--------------- Home hero ---------------*/}
@@ -98,6 +116,20 @@ export default function Home() {
           <Button>SUBSCRIBE</Button>
         </div>
       </div>
+
+      {/*--------------- Chat box ---------------*/}
+      <div ref={ref}>
+        <SupportWindow 
+          visible={visible}/>
+        <Avatar
+          onClick={() => setVisible(true)}
+          style={{ 
+            position: 'fixed', 
+            bottom: '24px', 
+            right: '24px' 
+          }}/>
+      </div>
+
     </div>
-  );
+  );      
 }
