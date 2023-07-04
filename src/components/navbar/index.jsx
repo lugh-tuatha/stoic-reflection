@@ -14,11 +14,13 @@ function Navbar() {
   return (
     <nav className='flex-between items-center py-4 text-secondary font-semibold '>
       <div className='z-50 cursor-pointer flex-between items-center w-full md:mx-0 md:w-auto '>
-        <Image  
-          src="/assets/logos/KH-LOGO.png"
-          alt='Brand logo'
-          width={40}
-          height={40}/>
+        <Link href="/">
+          <Image  
+            src="/assets/logos/KH-LOGO.png"
+            alt='Brand logo'
+            width={40}
+            height={40}/>
+        </Link>
         <div className='text-3xl md:hidden' onClick={() => setOpen(!open)}>
           {open ? <IoMdMenu /> : <IoMdClose /> }
         </div>

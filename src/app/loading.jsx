@@ -9,7 +9,7 @@ export default function Loading() {
     <div className="sweet-loading w-full h-full flex justify-center items-center">
       <HashLoader
         color={color}
-        size={100}
+        size={50}
         aria-label="Loading Spinner"
         data-testid="loader"
       />

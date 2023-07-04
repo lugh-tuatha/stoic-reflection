@@ -7,7 +7,7 @@ function Avatar({ style, hoverable = true, ...props}) {
     <div style={style}>
       <div className="group flex items-center gap-2">
         {hoverable && (
-          <div className='hidden px-4 py-4 duration-300 group-hover:block bg-primary bg-opacity-50 rounded-full'>
+          <div className='hidden px-4 py-4 duration-300 group-hover:block bg-primary rounded-full'>
             <p>Hey it&apos;s kh team!!!</p>
           </div>
         )}
@@ -15,7 +15,7 @@ function Avatar({ style, hoverable = true, ...props}) {
         <div onClick={() => props.onClick && props.onClick()} 
           className='rounded-full w-20 h-20 border-4 duration-200 box-shadow border-primary hover:border hover:border-accent'>
           <Image  
-            src="/assets/logos/ChatLogo.png"
+            src="/assets/logos/chatLogo.png"
             alt='Avatar'
             width={80}
             height={80}
