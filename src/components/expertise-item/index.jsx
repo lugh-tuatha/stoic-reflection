@@ -7,7 +7,7 @@ function ExpertiseItem() {
   return (
     <div className='mt-8 w-11/12 mx-auto'>
       {expertise.map((expertise_list, index) => (
-        <div key={expertise_list.id} className={`xl:flex gap-20 mb-12 ${index % 2 === 1 ? 'flex-row-reverse' : ''}`}>
+        <div key={expertise_list.id} className={`lg:flex gap-10 mb-12 ${index % 2 === 1 ? 'flex-row-reverse' : ''}`}>
           <Image  
             src={expertise_list.banner}
             alt='Expertise item image'

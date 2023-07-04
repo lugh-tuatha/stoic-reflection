@@ -8,7 +8,7 @@ function Avatar({ style, hoverable = true, ...props}) {
       <div className="group flex items-center gap-2">
         {hoverable && (
           <div className='hidden px-4 py-4 duration-300 group-hover:block bg-primary bg-opacity-50 rounded-full'>
-            <p>Hey it's kh team!!!</p>
+            <p>Hey it&apos;s kh team!!!</p>
           </div>
         )}
 
