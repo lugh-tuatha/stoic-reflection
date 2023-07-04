@@ -23,7 +23,7 @@ function ExpertiseItem() {
                 height={1}/>
               <h2 className='title font-bold text-secondary mt-4'>{expertise_list.title}</h2>
               <p className='my-4 desc text-justify'>{expertise_list.detailedDesc}</p>
-              <button className='button w-1/4 mt-6 lg:mt-12'>Learn More</button>
+              <button className='button w-2/4 md:w-1/4 mt-6 lg:mt-12'>Learn More</button>
             </div>
         </div>
       ))}

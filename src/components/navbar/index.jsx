@@ -39,9 +39,9 @@ function Navbar() {
       </div>
 
       {/* Mobile nav */}
-      <div  className={`
-          md:hidden absolute top-0 w-11/12 bg-white min-h-full h-auto py-20 
-          duration-500 text-lg ${open ? 'opacity-0' : 'opacity-1'}
+      <div onClick={() => setOpen(!open)}  className={`
+          md:hidden absolute top-0 w-full bg-white min-h-full h-auto z-20 overflow-y-hidden px-4 py-20 
+          duration-200 text-lg ${open ? '-left-full' : 'left-0'}
           `}>
         <ul>
           <NavLinks />

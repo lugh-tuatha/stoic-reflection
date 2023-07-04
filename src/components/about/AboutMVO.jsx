@@ -30,7 +30,7 @@ function AboutMVO() {
           <p className='text-justify'>The Know How Tech hopes to see all of our clients taking advantage of the digital world and creating content to reach a larger audience. We are dedicated to enhancing your online presence, formulating your digital strategy, and executing digital marketing plans to help you reach your goal.</p>
         </div>
       </div>
-      <h1 className='text-secondary mt-2 title font-bold'>COMPANY OBJECTIVES</h1>
+      <h1 className='mt-6 heading-3 text-secondary font-bold'>COMPANY OBJECTIVES</h1>
       <p className='text-justify'>The main goal of Know How Tech is to give our clients digital opportunities and help them make a profit. We strive to create comprehensive solutions for businesses that are transitioning from traditional to digital. Our aim is not to make money, but to make a life for your business. Additionally, we offer digital solutions that are cost-effective, dependable, and have a great user experience. We also provide training and education for businesses in the digital world. Our team of experts is highly knowledgeable in the field and has a thorough understanding of what it takes to achieve success.</p>
     </div>
   )

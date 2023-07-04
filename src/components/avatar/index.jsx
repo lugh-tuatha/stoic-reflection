@@ -15,7 +15,7 @@ function Avatar({ style, hoverable = true, ...props}) {
         <div onClick={() => props.onClick && props.onClick()} 
           className='rounded-full w-20 h-20 border-4 duration-200 box-shadow border-primary hover:border hover:border-accent'>
           <Image  
-            src="/assets/logos/chatLogo.png"
+            src="/assets/logos/chat.png"
             alt='Avatar'
             width={80}
             height={80}
