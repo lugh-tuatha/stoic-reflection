@@ -40,7 +40,7 @@ export default function Home() {
         </div>
 
         <Image  
-          src="/assets/illustration/ai4.jpeg"
+          src="/assets/illustration/ai4.png"
           alt='Home hero'
           width={500}
           height={500}
@@ -104,7 +104,7 @@ export default function Home() {
 
         <div className='bg-secondary h-96 rounded-xl p-8 lg:w-1/2 xl:w-1/3'>
           <p className='title text-white'>Join Our Newsletter</p>
-          <p className='desc opacity-80 text-white'>Stay Up-to-Date with EmoWall News and Updates</p>
+          <p className='desc opacity-80 text-white'>Stay Up-to-Date with THEKHTECH News and Updates</p>
           <div className='mt-6 mb-4'>
             <Fa.FaUserCircle className='absolute mt-1 text-primary text-2xl'/>
             <input type="text" placeholder='Full Name' className='input-styles'/> <br />
@@ -129,7 +129,6 @@ export default function Home() {
             right: '24px' 
           }}/>
       </div>
-
     </div>
   );      
 }
