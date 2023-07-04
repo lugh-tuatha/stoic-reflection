@@ -1,5 +1,5 @@
 import React from 'react'
-import Image from 'next/image'
+import '../../app/globals.css'
 
 import Login from '@/components/admin/login'
 function Admin() {
