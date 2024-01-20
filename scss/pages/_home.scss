@@ -1,0 +1,69 @@
+.hero{
+    display: grid;
+    gap: 3rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    margin-top: 2rem;
+
+    @media (min-width: 900px) {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+    }
+
+    &__desc{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        gap: 2rem;
+    }
+
+    &__banner{
+        img{
+            width: 100%;
+            border-radius: .5rem;
+            border-bottom-right-radius: 7.5rem;
+        }
+    }
+}
+
+.top__journals{
+    margin-top: 2rem;
+}
+
+.top{
+    display: grid;
+    gap: 3rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    margin-top: 1rem;
+
+    @media (min-width: 900px) {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+    }
+
+    img{
+        width: 100%;
+    }
+
+    &__container{
+        h1{
+            text-align: center;
+        }
+
+        p{
+            font-size: .80rem;
+            margin: .5rem 0;
+            text-align: justify;
+            color: var(--text-200);
+        }
+
+        a{
+            font-size: .80rem;
+            color: var(--accent-200);
+            display: block;
+            text-align: center;
+        }
+    }
+}
