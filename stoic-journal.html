@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stoic Reflection</title>
+    <!-- link for styles -->
     <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
 </head>
 <body>
     <nav>
@@ -17,30 +20,40 @@
         </div>
     </nav>
 
+     
     <main class="container">
         <section class="stoic-journal">
             <h1>Latest Journal</h1>
             
-            <div class="journals">
-                <div class="journals__container">
-                    <h1>title</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores veniam odio ipsa corporis reiciendis? Dolore?</p>
-                    <a href="#">readmore >></a>
-                </div>
-                <div class="journals__container">
-                    <h1>title</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores veniam odio ipsa corporis reiciendis? Dolore?</p>
-                    <a href="#">readmore >></a>
-                </div>
-                <div class="journals__container">
-                    <h1>title</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores veniam odio ipsa corporis reiciendis? Dolore?</p>
-                    <a href="#">readmore >></a>
-                </div>
+            <button data-open-add-modal>add</button>
+            
+            <div class="journals" id="journals">
+                <!-- data coming from api -->
             </div>
+
+            <!-- popup modal for adding reflection -->
+            <dialog class="add-dialog" data-add-modal>
+                <form onsubmit="addReflection()">
+                    <label for="title">Title: </label>
+                    <input type="text" id="title"> <br>
+                    <input type="submit">
+                </form>
+                <button data-close-add-modal>close</button>
+            </dialog>
+            
         </section>
     </main>
+    
+    <!-- axios script -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
+    <!-- script for reusable utils -->
+    <script src="js/utils.js"></script>
+
+    <!-- main script -->
     <script src="js/main.js"></script>
+
+    <!-- script for api request -->
+    <script src="js/api.js"></script>
 </body>
 </html>
