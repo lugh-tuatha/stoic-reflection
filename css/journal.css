@@ -52,8 +52,8 @@ body {
 #mySearch {
   width: 100%;
   font-size: 18px;
-  padding: 3rem;
-  border: 1px solid #fff3d5;
+  padding: 11px;
+  border: 1px solid #dac3a5;
 }
 
 #myMenu {
@@ -61,6 +61,7 @@ body {
   padding: 0;
   margin: 0;
   text-align: center;
+  font-style: bold;
 }
 
 #myMenu li a {
@@ -68,29 +69,11 @@ body {
   text-decoration: none;
   color: #600000;
   font-style: bold;
+   display: block;
 }
 
 #myMenu li a:hover {
-  background-color: #ffc18a;
-}
-#mySearch {
-  width: 100%;
-  font-size: 18px;
-  padding: 11px;
-  border: 1px solid #ffa8a8;
-}
-
-#myMenu {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-#myMenu li a {
-  padding: 12px;
-  text-decoration: none;
-  color: #600000;
-  display: block;
+  background-color: #dac3a5;
 }
 
 .content{
