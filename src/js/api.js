@@ -1,3 +1,7 @@
+import axios from 'axios';
+
+import { getNumberDayOfTheYear } from './utils.js';
+
 /*------------ GET all Reflections ------------*/
 axios.get('http://localhost:5000/api/v1/stoic/reflections')
     .then(function (response) {
@@ -18,8 +22,6 @@ axios.get('http://localhost:5000/api/v1/stoic/reflections')
     .catch(function (error) {
         console.error('Error fetching data:', error);
     });
-
-
 
 /*------------ POST Reflection ------------*/
 const title = document.getElementById('title')

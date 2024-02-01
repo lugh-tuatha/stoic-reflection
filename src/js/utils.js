@@ -5,3 +5,7 @@ const getNumberDayOfTheYear = (date) => {
     let dateDifference = dates - startOfTheYear;
     return Math.ceil(dateDifference / (1000 * 60 * 60 * 24));
 }
+
+module.exports = {
+    getNumberDayOfTheYear
+};
