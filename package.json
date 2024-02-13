@@ -4,7 +4,7 @@
   "description": "A webapp for Ace & Jai to put there daily Reflection about the book daily stoic",
   "main": "js/main.js",
   "scripts": {
-    "dev": "webpack-dev-server --config webpack.dev.js --open",
+    "dev": "webpack-dev-server --config webpack.dev.js --open --host 0.0.0.0 --port 8080",
     "build": "webpack --config webpack.prod.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
